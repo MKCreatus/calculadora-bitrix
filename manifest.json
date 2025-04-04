@@ -3,17 +3,17 @@
   "version": "1.0",
   "description": "Calculadora simples embutida no Bitrix",
   "entrypoint": {
-    "url": "https://mkcreatus.github.io/calculadora-bitrix/"
+    "url": "https://earnest-melomakarona-6e4722.netlify.app/"
   },
   "type": "local",
   "placement": {
     "default": {
-      "handler": "https://mkcreatus.github.io/calculadora-bitrix/",
+      "handler": "https://earnest-melomakarona-6e4722.netlify.app/",
       "title": "Calculadora",
       "group_name": "Utilitários"
     },
     "crm_deal_detail_tab": {
-      "handler": "https://mkcreatus.github.io/calculadora-bitrix/",
+      "handler": "https://earnest-melomakarona-6e4722.netlify.app/",
       "title": "Calculadora",
       "group_name": "Utilitários"
     }
