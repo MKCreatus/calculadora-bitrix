@@ -1,11 +1,54 @@
+<!-- calculadora.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculadora Bitrix</title>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    input, button {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Calculadora funcionando!</h1>
+  <h2>Calculadora Simples</h2>
+  <input id="input1" type="number" placeholder="Número 1">
+  <input id="input2" type="number" placeholder="Número 2">
+  <select id="operador">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+
+  <script>
+    function calcular() {
+      const num1 = parseFloat(document.getElementById('input1').value);
+      const num2 = parseFloat(document.getElementById('input2').value);
+      const op = document.getElementById('operador').value;
+      let resultado = 'Resultado: ';
+
+      if (!isNaN(num1) && !isNaN(num2)) {
+        switch(op) {
+          case '+': resultado += num1 + num2; break;
+          case '-': resultado += num1 - num2; break;
+          case '*': resultado += num1 * num2; break;
+          case '/': resultado += num1 / num2; break;
+        }
+      } else {
+        resultado = "Insira números válidos.";
+      }
+
+      document.getElementById('resultado').innerText = resultado;
+    }
+  </script>
 </body>
 </html>
