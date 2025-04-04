@@ -2,3 +2,4 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "ALLOWALL"
+    Content-Security-Policy = "frame-ancestors 'self' https://*.bitrix24.com https://*.bitrix24.net https://*.bitrix24.ru;"
