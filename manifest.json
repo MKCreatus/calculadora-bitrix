@@ -1,18 +1,26 @@
 {
-    "name": "Calculadora",
-    "version": "1.0",
-    "description": "Calculadora simples integrada ao Bitrix",
-    "entrypoint": {
-      "url": "https://seu-servidor.com/calculadora.html"
+  "name": "Calculadora Bitrix",
+  "version": "1.0",
+  "description": "Calculadora simples embutida no Bitrix",
+  "entrypoint": {
+    "url": "https://mkcreatus.github.io/calculadora-bitrix/"
+  },
+  "type": "local",
+  "placement": {
+    "default": {
+      "handler": "https://mkcreatus.github.io/calculadora-bitrix/",
+      "title": "Calculadora",
+      "group_name": "Utilitários"
     },
-    "type": "local",
-    "lang": {
-      "en": {
-        "name": "Calculator"
-      },
-      "ru": {
-        "name": "Калькулятор"
-      }
+    "crm_deal_detail_tab": {
+      "handler": "https://mkcreatus.github.io/calculadora-bitrix/",
+      "title": "Calculadora",
+      "group_name": "Utilitários"
+    }
+  },
+  "lang": {
+    "pt": {
+      "name": "Calculadora Bitrix"
     }
   }
-  
+}
