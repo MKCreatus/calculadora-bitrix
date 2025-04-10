@@ -1,3 +1,4 @@
-/*
-  X-Frame-Options: 
-  Content-Security-Policy: frame-ancestors https://*.bitrix24.com https://*.bitrix24.net https://*.bitrix24.ru;
+<script src="//api.bitrix24.com/api/v1/"></script>
+<script>
+				BX24.init(function(){BX24.installFinish();});
+			</script>
